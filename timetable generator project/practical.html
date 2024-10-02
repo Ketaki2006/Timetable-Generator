@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practical Page</title>
+    <link rel="stylesheet" href="styleforfrontend.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <form id="practicalPage">
+            <label for="shift">Shift:</label>
+            <select id="shift">
+                <option value="1st">1st Shift</option>
+                <option value="2nd">2nd Shift</option>
+                <option value="Both">Both</option>
+            </select>
+
+            <label for="subject">Subject:</label>
+            <select id="subject">
+                <option value="">Select a subject</option>
+            </select>
+
+            <label for="timeSlot">Slot Timing:</label>
+            <select id="timeSlot">
+                <option value="10:00-12:00">10:00 - 12:00</option>
+                <option value="1:00-3:00">1:00 - 3:00</option>
+                <option value="3:00-5:00">3:00 - 5:00</option>
+            </select>
+
+            <label for="batch">Batch:</label>
+            <select id="batch">
+                <option value="A Batch">A Batch</option>
+                <option value="B Batch">B Batch</option>
+                <option value="C Batch">C Batch</option>
+            </select>
+
+            <label for="classroom">Classroom:</label>
+            <select id="classroom">
+                <option value="302 A">302 A</option>
+                <option value="302 B">302 B</option>
+                <option value="303">303</option>
+            </select>
+
+            <label for="faculty">Faculty Name:</label>
+            <select id="faculty">
+                <option value="">Select a faculty</option>
+            </select>
+            
+            <button type="submit">Generate Timetable</button>
+        </form>
+    </div>
+    <script src="practical.js"></script>
+</body>
+</html>
