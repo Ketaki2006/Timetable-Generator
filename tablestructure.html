@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Weekly Timetable</h2>
+
+    <!-- Buttons to interact with the timetable -->
+    <button id="populate-btn">Populate Timetable</button>
+    <button id="clear-btn">Clear Timetable</button>
+    <button id="export-btn">Export to Excel</button>
+
+    <table id="timetable">
+        <thead>
+            <tr>
+                <th>time/Days</th>
+                <th>10-11</th>
+                <th>11-12</th>
+                <th>12-1</th>
+                <th>1-2</th>
+                <th>2-3</th>
+                <th>3-4</th>
+                <th>4-5</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Monday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Tuesday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Thursday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Friday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Saturday</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Include SheetJS from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script>
+        // Function to export the timetable to an Excel file
+        function exportTableToExcel() {
+            // Get the HTML table
+            let table = document.getElementById('timetable');
+            
+            // Create a new workbook
+            let workbook = XLSX.utils.book_new();
+
+            // Convert the HTML table to a worksheet
+            let worksheet = XLSX.utils.table_to_sheet(table);
+
+            // Add the worksheet to the workbook
+            XLSX.utils.book_append_sheet(workbook, worksheet, "Timetable");
+
+            // Export the workbook to Excel
+            XLSX.writeFile(workbook, "Timetable.xlsx");
+        }
+
+        // Add event listener to export button
+        document.getElementById('export-btn').addEventListener('click', exportTableToExcel);
+    </script>
+
+</body>
+</html>
