@@ -1,0 +1,46 @@
+.buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.savebtn{
+    padding: 13px 70px ;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-size: 20px; 
+    margin-right: 200px;;
+    margin-bottom: 20px;
+  } 
+ 
+
+.savebtn:hover {
+    background-color: #4cae4c;
+  }
+  
+
+.nextbtn{
+    padding: 13px 70px ;
+    border-radius: 4px;
+    background-color: #5cb85c;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-size: 20px; 
+    margin-bottom: 20px;
+  }
+
+
+.nextbtn:hover {
+    background-color: #4cae4c;
+  }
+  
+.nextbtn:hover{
+    background-color: #398439;
+  }
