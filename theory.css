@@ -1,0 +1,54 @@
+.button{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+.savebtn{
+  padding: 10px ;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 20px; 
+  margin-right: 20px;;
+  margin-bottom: 20px;
+}  
+
+  button:hover {
+    background-color: #4cae4c;
+  }
+  
+  button:active {
+    background-color: #398439;
+  }
+
+.nextbtn{
+  padding: 16px 38px;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 20px; 
+}
+
+.backbtn{
+  padding: 12px ;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin-right: 200px;
+  margin-bottom: 20px; 
+} 
+
