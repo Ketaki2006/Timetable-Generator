@@ -1,0 +1,65 @@
+.heading{
+    text-align: center;
+    font-family: "Sofia", sans-serif;
+    font-size: 70px;
+    font-weight: 700;
+}
+  
+.welcome{
+    text-align: center;
+    font-family: "Trirong", serif;
+    font-size: 40px;
+    margin: -24px 0px;
+}
+
+.getstarted{
+    text-align: center;
+    font-family: "Trirong", serif;
+    font-size: 40px;
+    margin: 50px 0px;
+}
+
+.para{
+    text-align: center;
+    font-size: 22px;
+    margin: 25px 0px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.createbtn{
+    padding: 25px 50px;
+   border-radius: 50px;
+   background-color: rgb(249, 207, 93);
+   border: none;
+   outline: none;
+   cursor: pointer;
+   font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 20px;
+  
+}
+
+.viewbtn{
+    padding: 25px 50px;
+    border-radius: 50px;
+    background-color: rgb(249, 207, 93);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Crimson Text", serif;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.createbtn:hover{
+    background-color: rgb(232, 153, 56);
+}
+
+.viewbtn:hover{
+    background-color: rgb(232, 153, 56);
+}
